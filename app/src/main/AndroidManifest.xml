@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AbsenPegawai"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".edit"
+            android:exported="true" />
+        <activity
             android:name=".Tampil"
             android:exported="true" />
         <activity
