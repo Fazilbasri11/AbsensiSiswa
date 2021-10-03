@@ -2,18 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ckdev.absenpegawai">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/apksaya"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/apksaya"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AbsenPegawai">
+        android:theme="@style/Theme.AbsenPegawai"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".Second"
+            android:name=".Tampil"
             android:exported="true" />
         <activity
-            android:name=".MainMenu"
+            android:name=".simpan"
+            android:exported="true" />
+        <activity
+            android:name=".Second"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

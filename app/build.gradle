@@ -32,6 +32,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
@@ -46,6 +51,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     api 'tk.zielony:carbon:0.16.0.1'
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
 
 
 
