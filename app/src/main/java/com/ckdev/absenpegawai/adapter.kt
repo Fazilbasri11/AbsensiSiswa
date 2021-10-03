@@ -4,9 +4,19 @@ import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
+import com.androidnetworking.AndroidNetworking
+import com.androidnetworking.common.Priority
+import com.androidnetworking.error.ANError
+import com.androidnetworking.interfaces.JSONObjectRequestListener
 import com.ckdev.absenpegawai.databinding.CustomtampilBinding
+import org.json.JSONObject
+import android.app.Activity
+
+
+
 
 class adapter (private val context: Context, private  val result:ArrayList<model>): RecyclerView.Adapter<adapter.MyHolder>() {
     private var Items = ArrayList<model>()
@@ -47,12 +57,12 @@ class adapter (private val context: Context, private  val result:ArrayList<model
                         }
 
                         1 -> {
-                            /*delete(result.id_crud)*/
+                            hapus(result.id_crud)
                         }
 
                         2 -> {
                             //digunakan untuk tidak memunculkan apapun
-                            //cancel     
+                            //cancel
                             dialog.dismiss()
                         }
                     }
@@ -65,6 +75,28 @@ class adapter (private val context: Context, private  val result:ArrayList<model
 
     override fun getItemCount(): Int {
         return Items.size
+    }
+
+    fun hapus (id : String){
+        AndroidNetworking.post("http://192.168.43.2/api/hapus.php")
+            .addBodyParameter("id",id)
+
+            .setPriority(Priority.MEDIUM)
+            .build()
+            .getAsJSONObject(object : JSONObjectRequestListener {
+                override fun onResponse(response: JSONObject) {
+                    if(response.getInt("succes")==1){
+                        Toast.makeText(context,response.getString("pesan"), Toast.LENGTH_SHORT).show()
+                        (context as Activity).finish()
+                    }else{
+                        Toast.makeText(context,response.getString("pesan"), Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+                override fun onError(error: ANError) {
+                    Toast.makeText(context,error.toString(), Toast.LENGTH_SHORT).show()
+                }
+            })
     }
 }
 

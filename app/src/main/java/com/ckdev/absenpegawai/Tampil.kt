@@ -43,6 +43,9 @@ class Tampil : AppCompatActivity() {
             .build()
             .getAsJSONObject(object : JSONObjectRequestListener {
                 override fun onResponse(response: JSONObject) {
+                    //agar data tidak dibca ulang
+                    result.clear()
+
                     if (response.getInt("success") == 1){
                         val jsonArray = response.optJSONArray("data")
 
