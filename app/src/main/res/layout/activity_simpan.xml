@@ -22,7 +22,9 @@
     <carbon.widget.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
         android:text="Jurusan"/>
 
     <RadioGroup
@@ -48,10 +50,14 @@
             android:id="@+id/rb_IPS"/>
     </RadioGroup>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <carbon.widget.Button
+        android:background="@color/black_light"
+        android:textColor="@color/white"
+        app:carbon_cornerRadius="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:text="simpan"
         android:id="@+id/bt_simpan"/>
 

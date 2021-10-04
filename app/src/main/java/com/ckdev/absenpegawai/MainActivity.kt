@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         btn.setOnClickListener{
             val intent= Intent(this, Second::class.java)
-            Toast.makeText(this@MainActivity, "login", Toast.LENGTH_SHORT).show()
 
             startActivity(intent)
         }
