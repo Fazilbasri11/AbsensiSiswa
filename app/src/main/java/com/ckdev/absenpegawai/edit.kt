@@ -13,7 +13,7 @@ import org.json.JSONObject
 
 class edit : AppCompatActivity() {
     private lateinit var binding: ActivityEditBinding
-    var jrs = "IPA"
+    var khdr = "HADIR"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEditBinding.inflate(layoutInflater)
@@ -33,8 +33,8 @@ class edit : AppCompatActivity() {
                 AndroidNetworking.post("http://192.168.43.2/api/edit.php")
                     .addBodyParameter("id", intent.getStringExtra("id"))
                     .addBodyParameter("nama", nama)
-                    .addBodyParameter("jurusan", jrs)
                     .addBodyParameter("mapel",mapel)
+                    .addBodyParameter("kehadiran", khdr)
 
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -54,11 +54,11 @@ class edit : AppCompatActivity() {
                     })
             }
         }
-        binding.rgJurusan.setOnCheckedChangeListener { radioGroup, checkId ->
-            if (checkId==binding.rbIPA.id){
-                jrs="IPA"
+        binding.rgKehadiran.setOnCheckedChangeListener { radioGroup, checkId ->
+            if (checkId==binding.rbHadir.id){
+                khdr="HADIR"
             }else{
-                jrs="IPS"
+                khdr="ALPA"
             }
         }
     }
@@ -75,12 +75,12 @@ class edit : AppCompatActivity() {
                         val JSONObject = response.optJSONObject("data")
                         binding.etNama.setText(JSONObject.getString("nama"))
                         binding.etMapel.setText(JSONObject.getString("mapel"))
-                        if (JSONObject.getString("jurusan")=="IPA"){
-                            binding.rbIPA.isChecked=true
-                            jrs = "IPA"
+                        if (JSONObject.getString("kehadiran")=="HADIR"){
+                            binding.rbHadir.isChecked=true
+                            khdr = "HADIR"
                         }else{
-                            binding.rbIPS.isChecked=true
-                            jrs = "IPS"
+                            binding.rbAlpa.isChecked=true
+                            khdr = "ALPA"
                         }
                     } else {
                         Toast.makeText(this@edit, response.getString("pesan"), Toast.LENGTH_SHORT)

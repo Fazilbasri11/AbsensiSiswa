@@ -56,7 +56,8 @@ class Tampil : AppCompatActivity() {
                                     jsonObject.getString("id_crud"),
                                     jsonObject.getString("nama"),
                                     jsonObject.getString("mapel"),
-                                    jsonObject.getString("jurusan")
+                                    jsonObject.getString("kehadiran")
+                                
 
                                 )
                             )

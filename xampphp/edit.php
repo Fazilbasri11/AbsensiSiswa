@@ -4,10 +4,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //input 
     $id_crud = $_POST['id'];
     $nama = $_POST['nama'];
-    $jk = $_POST['jurusan'];
+    
     $mapel = $_POST['mapel'];
+    $khdr = $_POST['kehadiran'];
     //proses
-    $proses = "UPDATE crudpertama SET nama = '$nama', jurusan = '$jk', mapel ='$mapel' where id_crud = '$id_crud' ";
+    $proses = "UPDATE crudpertama SET nama = '$nama', mapel ='$mapel', kehadiran = '$khdr' where id_crud = '$id_crud' ";
     //output
     if (mysqli_query($con, $proses)) {
         //true

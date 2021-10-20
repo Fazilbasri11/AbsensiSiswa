@@ -25,10 +25,10 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
-        android:text="Jurusan"/>
+        android:text="Kehadiran"/>
 
     <RadioGroup
-        android:id="@+id/rg_jurusan"
+        android:id="@+id/rgKehadiran"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -39,15 +39,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="IPA"
+            android:text="Hadir"
             android:checked="true"
-            android:id="@+id/rb_IPA"/>
+            android:id="@+id/rbHadir"/>
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="IPS"
-            android:id="@+id/rb_IPS"/>
+            android:text="Alpa"
+            android:id="@+id/rbAlpa"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sakit"/>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Izin"/>
     </RadioGroup>
 
     <carbon.widget.Button

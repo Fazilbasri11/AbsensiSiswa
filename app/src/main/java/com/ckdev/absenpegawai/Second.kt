@@ -22,6 +22,12 @@ class Second : AppCompatActivity() {
 
         binding.btTampil.setOnClickListener{
             startActivity(Intent(this@Second,Tampil::class.java))
+
+        }
+
+        binding.btEvent.setOnClickListener{
+            startActivity(Intent(this@Second,activity_event::class.java))
+
         }
     }
 }

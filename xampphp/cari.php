@@ -11,8 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $hasil = array();
         $hasil['id_crud'] = $row['id_crud'];
         $hasil['nama'] = $row['nama'];
-        $hasil['jurusan'] = $row['jurusan'];
         $hasil['mapel'] = $row['mapel'];
+        $hasil['kehadiran'] = $row['kehadiran'];
         $response['data'] = $hasil;
         echo json_encode($response);
     } else {

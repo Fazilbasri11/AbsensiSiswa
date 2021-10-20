@@ -3,10 +3,10 @@ require_once('koneksi.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //input 
     $nama = $_POST['nama'];
-    $jk = $_POST['jurusan'];
     $mapel = $_POST['mapel'];
+    $khdr = $_POST['kehadiran'];
     //proses
-    $proses = "INSERT INTO crudpertama (nama,jurusan,mapel) VALUES ('$nama','$jk','$mapel')";
+    $proses = "INSERT INTO crudpertama (nama,mapel,kehadiran) VALUES ('$nama','$mapel','$khdr')";
     //output
     if (mysqli_query($con, $proses)) {
         //true

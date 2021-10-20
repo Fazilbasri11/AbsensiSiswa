@@ -21,32 +21,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <ImageView
-                android:src="@drawable/admin"
                 android:layout_width="70dp"
-                android:layout_height="70dp"/>
+                android:layout_height="70dp"
+                android:src="@drawable/admin" />
+
             <LinearLayout
-                android:paddingLeft="10dp"
-                android:layout_marginTop="8dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
                 <TextView
-                    android:layout_marginLeft="70dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Alexander"
+                    android:layout_marginLeft="70dp"
+                    android:fontFamily="@font/sans__bold"
+                    android:text="Fazil Basri"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:fontFamily="@font/sans__bold"/>
+                    android:textSize="20dp" />
+
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_marginLeft="70dp"
                     android:layout_height="wrap_content"
-                    android:text="NIP : 14434554264"
+                    android:layout_marginLeft="70dp"
+                    android:fontFamily="@font/sans__bold"
+                    android:text="NIM : 144264"
                     android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:fontFamily="@font/sans__bold"/>
+                    android:textSize="14dp" />
             </LinearLayout>
 
             <carbon.widget.Button
@@ -64,152 +68,154 @@
         </carbon.widget.RelativeLayout>
 
         //petak atas
-        <carbon.widget.GridLayout
-            android:layout_margin="10dp"
-            app:alignmentMode="alignMargins"
-            app:columnOrderPreserved="false"
-            app:rowCount="2"
-            app:columnCount="2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingBottom="16dp"
-                    android:id="@+id/bt_input"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/profile"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+        <!-- <carbon.widget.GridLayout
+             android:layout_margin="10dp"
+             app:alignmentMode="alignMargins"
+             app:columnOrderPreserved="false"
+             app:rowCount="2"
+             app:columnCount="2"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 app:layout_columnWeight="1"
+                 app:layout_rowWeight="1"
+                 app:cardElevation="6dp"
+                 app:cardCornerRadius="12dp"
+                 android:layout_margin="12dp">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:paddingBottom="16dp"
+                     android:id="@+id/bt_input"
+                     android:gravity="center">
+                     <ImageView
+                         android:layout_marginTop="10dp"
+                         android:src="@drawable/profile"
+                         android:layout_width="80dp"
+                         android:layout_height="80dp"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Tambah Siswa"/>
-                    <!--<TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Pengajar"
-                        />-->
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Tambah Siswa"/>
+                     &lt;!&ndash;<TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Pengajar"
+                         />&ndash;&gt;
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
 
-            //mapel
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingBottom="16dp"
-                    android:id="@+id/bt_tampil"
-                    android:gravity="center">
-                    <ImageView
-                        android:src="@drawable/time"
-                        android:layout_width="80dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Data Siswa"/>
-                    <!--<TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Cek Mapel"/>-->
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+             //mapel
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 app:layout_columnWeight="1"
+                 app:layout_rowWeight="1"
+                 app:cardElevation="6dp"
+                 app:cardCornerRadius="12dp"
+                 android:layout_margin="12dp">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:paddingBottom="16dp"
+                     android:id="@+id/bt_tampil"
+                     android:gravity="center">
+                     <ImageView
+                         android:src="@drawable/time"
+                         android:layout_width="80dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_height="80dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Data Siswa"/>
+                     &lt;!&ndash;<TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Cek Mapel"/>&ndash;&gt;
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
 
-            //RekapNilai
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:paddingBottom="16dp"
-                    android:gravity="center">
-                    <ImageView
-                        android:src="@drawable/book"
-                        android:layout_width="80dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Raport"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+             //RekapNilai
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 app:layout_columnWeight="1"
+                 app:layout_rowWeight="1"
+                 app:cardElevation="6dp"
+                 app:cardCornerRadius="12dp"
+                 android:layout_margin="12dp">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:paddingBottom="16dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:src="@drawable/book"
+                         android:layout_width="80dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_height="80dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Raport"/>
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
 
-            //event
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_columnWeight="1"
-                app:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/bt_event"
-                    android:orientation="vertical"
-                    android:paddingBottom="16dp"
-                    android:gravity="center">
-                    <ImageView
-                        android:src="@drawable/event"
-                        android:layout_width="80dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_height="80dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="Event"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+             //event
+             <androidx.cardview.widget.CardView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/bt_event"
+                 app:layout_columnWeight="1"
+                 app:layout_rowWeight="1"
+                 app:cardElevation="6dp"
+                 app:cardCornerRadius="12dp"
+                 android:layout_margin="12dp">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:orientation="vertical"
+                     android:paddingBottom="16dp"
+                     android:gravity="center">
+                     <ImageView
+                         android:src="@drawable/event"
+                         android:layout_width="80dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_height="80dp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="12dp"
+                         android:textSize="18sp"
+                         android:text="Event"/>
+                 </LinearLayout>
+             </androidx.cardview.widget.CardView>
 
-        </carbon.widget.GridLayout>
+         </carbon.widget.GridLayout>-->
 
         //pengumuman
         <carbon.widget.LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
             app:carbon_cornerRadius="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -254,7 +260,6 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/tv_peng"
                         android:text="lipsum as it is sometimes known, is dummy text used in laying out print,graphic or web designs. The passage is attributed to an unknown ..."
                         android:textSize="12sp"/>
 
@@ -266,97 +271,19 @@
                         android:background="#5e3f7d"
                         android:textColor="@color/white"
 
-                        android:text="Update"
+                        android:text="Selengkapnya..."
                         android:textAllCaps="false"/>
 
                 </carbon.widget.LinearLayout>
             </carbon.widget.LinearLayout>
 
         </carbon.widget.LinearLayout>
-
-        //card absen
-        <carbon.widget.LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            app:carbon_cornerRadius="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:background="#B3FFFFFF">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/sans__bold"
-                android:layout_margin="10dp"
-                android:text="Absen Kehadiran"
-                android:textSize="20dp" />
-            <carbon.widget.LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:background="@color/white">
-                <ImageView
-                    android:src="@drawable/admin"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"/>
-
-                //data kelas
-                <carbon.widget.LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingLeft="10dp"
-                    android:paddingBottom="10dp"
-                    android:background="@color/white">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/sans__bold"
-                        android:text="Data Mining"
-                        android:textSize="18sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Selasa 12-September-2021"
-                        android:textSize="12sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Alexander M.Si"
-                        android:textSize="12sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Link : www.googlemeet.com"
-                        android:textColor="#FF5E3F7D"
-                        android:textSize="14sp"/>
-
-                    <carbon.widget.Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="33dp"
-                        android:layout_marginTop="10dp"
-                        android:background="#5e3f7d"
-                        android:textColor="@color/white"
-                        android:text="Absen"
-                        android:textAllCaps="false"/>
-
-                </carbon.widget.LinearLayout>
-            </carbon.widget.LinearLayout>
-
-        </carbon.widget.LinearLayout>
-
-        //Tugas mendatang
         <carbon.widget.LinearLayout
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             app:carbon_cornerRadius="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -365,7 +292,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tugas Mendatang"
+                android:text="Terkini"
                 android:layout_margin="10dp"
                 android:textSize="20dp"
                 android:fontFamily="@font/sans__bold"/>
@@ -387,7 +314,7 @@
                     <ImageView
                         android:src="@drawable/admin"
                         android:layout_width="50dp"
-                        android:layout_marginTop="60dp"
+                        android:layout_marginTop="20dp"
                         android:layout_height="50dp"/>
                 </LinearLayout>
 
@@ -404,14 +331,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/sans__bold"
-                        android:text="Latihan 2"
+                        android:text="Olimpiade Tingkat Kabupaten"
                         android:textSize="18sp"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tenggat"
                         android:fontFamily="@font/sans__bold"
-                        android:textColor="#FF0019"
+                        android:textColor="#FFFFFF"
                         android:textSize="14sp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -420,18 +347,19 @@
                         android:textSize="12sp"/>
 
                     <TextView
-                        android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:fontFamily="@font/sans__bold"
-                        android:text="Choice"
-                        android:textSize="18sp"/>
+                        android:text="Debat Sains"
+                        android:textSize="18sp" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tenggat"
                         android:fontFamily="@font/sans__bold"
-                        android:textColor="#FF0019"
+                        android:textColor="#FFFFFF"
                         android:textSize="14sp"/>
                     <TextView
                         android:layout_width="wrap_content"
@@ -443,6 +371,105 @@
                 </carbon.widget.LinearLayout>
             </carbon.widget.LinearLayout>
         </carbon.widget.LinearLayout>
+        <carbon.widget.LinearLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            app:carbon_cornerRadius="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="#B3FFFFFF">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event sekolah"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/sans__bold"/>
+            <carbon.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/admin"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+                    <ImageView
+                        android:src="@drawable/admin"
+                        android:layout_width="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="50dp"/>
+                </LinearLayout>
+
+
+                //data kelas
+                <carbon.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@color/white">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sans__bold"
+                        android:text="Lomba 17-san OSIS"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tenggat"
+                        android:fontFamily="@font/sans__bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selasa 12-September-2021"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/sans__bold"
+                        android:text="Pentas Seni"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tenggat"
+                        android:fontFamily="@font/sans__bold"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selasa 12-September-2021"
+                        android:textSize="12sp"/>
+
+
+                </carbon.widget.LinearLayout>
+            </carbon.widget.LinearLayout>
+        </carbon.widget.LinearLayout>
+
+
+
+
+
+
+
 
         <TextView
             android:layout_width="match_parent"

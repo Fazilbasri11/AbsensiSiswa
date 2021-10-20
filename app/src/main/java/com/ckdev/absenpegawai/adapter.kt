@@ -39,8 +39,8 @@ class adapter (private val context: Context, private  val result:ArrayList<model
         val result = Items[position]
         with(holder){
             binding.tvNama.text=result.nama
-            binding.tvJrs.text=result.jurusan
             binding.tvMapel.text= result.mapel
+            binding.tvJrs.text=result.kehadiran
 
             //popup
 

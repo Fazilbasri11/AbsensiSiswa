@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/covid.xml" value="0.2703125" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/fb.xml" value="0.2703125" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/foto.xml" value="0.22685185185185186" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/google.xml" value="0.2703125" />
@@ -14,14 +16,17 @@
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/shape.xml" value="0.1" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/drawable/user.xml" value="0.14722222222222223" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/font/fontfamily.xml" value="0.12777777777777777" />
-        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_edit.xml" value="0.15092592592592594" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_edit.xml" value="0.1" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_event.xml" value="0.25416666666666665" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_main_menu.xml" value="0.2" />
-        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_second.xml" value="0.2" />
-        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_simpan.xml" value="0.264" />
-        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_tampil.xml" value="0.128" />
-        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/customtampil.xml" value="0.1111111111111111" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_simpan.xml" value="0.25416666666666665" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/activity_tampil.xml" value="0.25416666666666665" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/customtampil.xml" value="0.25416666666666665" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/event.xml" value="0.25416666666666665" />
         <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/mainmenu.xml" value="0.264" />
+        <entry key="..\:/SEMESTER 5/android studio/absenPegawai/app/src/main/res/layout/pengumuman.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

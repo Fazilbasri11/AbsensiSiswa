@@ -16,7 +16,7 @@ import com.androidnetworking.common.Priority
 
 class simpan : AppCompatActivity() {
     private lateinit var binding: ActivitySimpanBinding
-    var jrs = "IPA"
+    var khdr = "HADIR"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivitySimpanBinding.inflate(layoutInflater)
@@ -35,8 +35,8 @@ class simpan : AppCompatActivity() {
                 //simpandata
                 AndroidNetworking.post("http://192.168.43.2/api/simpan.php")
                     .addBodyParameter("nama", nama)
-                    .addBodyParameter("jurusan", jrs)
                     .addBodyParameter("mapel",mapel)
+                    .addBodyParameter("kehadiran", khdr)
                   
                     .setPriority(Priority.MEDIUM)
                     .build()
@@ -56,11 +56,11 @@ class simpan : AppCompatActivity() {
                     })
             }
         }
-        binding.rgJurusan.setOnCheckedChangeListener { radioGroup, checkId ->
-            if (checkId==binding.rbIPA.id){
-                jrs="IPA"
+        binding.rgKehadiran.setOnCheckedChangeListener { radioGroup, checkId ->
+            if (checkId==binding.rbHadir.id){
+                khdr="HADIR"
             }else{
-                jrs="IPS"
+                khdr="ALPA"
             }
         }
     }
